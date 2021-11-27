@@ -17,13 +17,12 @@ spring:
           uri: lb://SHIPPING-SERVICE
           predicates:
             - Path=/shipping/**
-#eureka:
-#  client:
-#    register-with-eureka:
-#      value: true
-#    fetch-registry:
-#      value: true;
-#    service-url:
-#      defaultZone: http://localhost:8761/eureka
-#    instance:
-#      hostname: localhost
+eureka:
+  instance:
+    homePageUrl: https://${eureka.instance.hostName}/
+    home-page-url-path: https://${eureka.instance.hostName}
+  client:
+    serviceUrl:
+      defaultZone: http://servicediscorvery.herokuapp.com/eureka
+      non-secure-port: 80
+      secure-port: 443
