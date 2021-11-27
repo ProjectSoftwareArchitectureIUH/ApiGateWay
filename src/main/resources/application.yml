@@ -17,6 +17,10 @@ spring:
           uri: lb://SHIPPING-SERVICE
           predicates:
             - Path=/shipping/**
+logging:
+  level:
+    org.springframework.cloud.gateway: TRACE
+
 eureka:
   instance:
     homePageUrl: https://${eureka.instance.hostName}/
