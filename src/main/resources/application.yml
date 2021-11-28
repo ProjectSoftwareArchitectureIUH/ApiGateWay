@@ -23,6 +23,7 @@ logging:
 
 eureka:
   instance:
+    hostname: serviceapigateway.herokuapp.com
     homePageUrl: https://${eureka.instance.hostName}/
     home-page-url-path: https://${eureka.instance.hostName}
   client:
