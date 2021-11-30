@@ -4,8 +4,8 @@ server:
 spring:
   application:
     name: API-GATEWAY
-  config:
-    import: "optional:configserver:"
+#   config:
+#     import: "optional:configserver:"
 #   cloud:
 #     gateway:
 #       routes:

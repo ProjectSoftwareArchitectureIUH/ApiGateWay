@@ -13,16 +13,11 @@
     <name>ApiGateWay</name>
     <description>ApiGateWay</description>
     <properties>
-
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-
-<!--        <spring-cloud.version>2021.0.0-RC1</spring-cloud.version>-->
+        <java.version>11</java.version>
+        <maven.compiler.source>12</maven.compiler.source>
+        <maven.compiler.target>12</maven.compiler.target>
+        <spring-cloud.version>2021.0.0-RC1</spring-cloud.version>
     </properties>
-
-
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -49,8 +44,9 @@
             <artifactId>jjwt</artifactId>
             <version>0.9.1</version>
         </dependency>
-    </dependencies>
 
+
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -63,7 +59,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
     <build>
         <plugins>
             <plugin>
@@ -72,6 +67,15 @@
             </plugin>
         </plugins>
     </build>
-
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>spring-milestones</id>-->
+<!--            <name>Spring Milestones</name>-->
+<!--            <url>https://repo.spring.io/milestone</url>-->
+<!--            <snapshots>-->
+<!--                <enabled>false</enabled>-->
+<!--            </snapshots>-->
+<!--        </repository>-->
+<!--    </repositories>-->
 
 </project>
