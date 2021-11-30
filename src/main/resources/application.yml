@@ -6,17 +6,17 @@ spring:
     name: API-GATEWAY
   config:
     import: "optional:configserver:"
-  cloud:
-    gateway:
-      routes:
-        - id: ORDERS-SERVICE
-          uri: lb://ORDERS-SERVICE
-          predicates:
-            - Path=/orders/**
-        - id: SHIPPING-SERVICE
-          uri: lb://SHIPPING-SERVICE
-          predicates:
-            - Path=/shipping/**
+#   cloud:
+#     gateway:
+#       routes:
+#         - id: ORDERS-SERVICE
+#           uri: lb://ORDERS-SERVICE
+#           predicates:
+#             - Path=/orders/**
+#         - id: SHIPPING-SERVICE
+#           uri: lb://SHIPPING-SERVICE
+#           predicates:
+#             - Path=/shipping/**
 logging:
   level:
     org.springframework.cloud.gateway: TRACE
