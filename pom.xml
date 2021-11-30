@@ -13,9 +13,9 @@
     <name>ApiGateWay</name>
     <description>ApiGateWay</description>
     <properties>
-        <java.version>11</java.version>
-        <maven.compiler.source>11.0.13</maven.compiler.source>
-        <maven.compiler.target>11.0.13</maven.compiler.target>
+        <java.version>13.0.9</java.version>
+        <maven.compiler.source>13.0.9</maven.compiler.source>
+        <maven.compiler.target>13.0.9</maven.compiler.target>
         <spring-cloud.version>2021.0.0-RC1</spring-cloud.version>
     </properties>
     <dependencies>
